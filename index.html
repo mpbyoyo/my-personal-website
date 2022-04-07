@@ -2,10 +2,45 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css"/>
-    <title>My Personal Website</title>
+    <script type="text/javascript" src="https://unpkg.com/paper@0.12.15/dist/paper-full.js"></script>
+    <script type="text/paperscript" src="paperScript.js" canvas="maze-canvas"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Maxwell Bourgeois</title>
   </head>
   <body>
     <script src="script.js"></script>
-    <h1>Hello World!</h1>
+    <div id="site-header">
+      <h2>Hello, I'm</h2>
+      <h1>Maxwell Bourgeois</h1>
+    </div>
+
+    <div id="contact">
+      <h3>Contact Me</h3>
+      <div>I can be contacted by:</div>
+        <span class="contact-img-container" id="discord">
+          <img class="contact-method-icon" id="discord-img" src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png"></span>
+        <span class="contact-img-container" id="gmail">
+          <img class="contact-method-icon" id="gmail-img" src="https://cdn.icon-icons.com/icons2/730/PNG/512/gmail_icon-icons.com_62758.png"></span>
+        <span class="contact-img-container" id="phone">
+          <img class="contact-method-icon" id="phone-img" src="http://assets.stickpng.com/images/5a452601546ddca7e1fcbc87.png"></span>
+      </div>
+    
+    <div id="summary">
+      <p> I'm an aspiring software engineer from New Orleans, Louisiana, where I was born and raised. 
+      I've been out of Highshcool for a little less than a year now, and I've spent a lot of that 
+      time building my HTML, CSS, and JavaScript skills. At first I took a local bootcamp similar to FlatIron 
+      called Operation Spark, but found it to be less rigorous than I'd like. My initial goal was to
+      take the bootcamp as a gap year. Add a new skill to my arsenal, have something cool to put on my resume,
+      something like that. But I quickly found that I really enjoyed coding, and decided to extend my gap year to
+      pursue a software engineering bootcamp.</p>
+      
+      <p> On a less professional note, I enjoy video games, science, vr, and walking around my city. I'm not
+      much of an extrovert, and spend a lot of time inside, but I do quite like talking to people. I really
+      enjoy talking futurology with people. You can learn a lot about a person by how they talk and think about the
+      future.</p>
+    </div>
+
+    <canvas id="maze-canvas"></canvas>
+
   </body>
 </html>
