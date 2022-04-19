@@ -1,5 +1,7 @@
 body {
   height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* #site-header {
@@ -10,7 +12,17 @@ body {
 
 #site-header {
   text-align: center;
+  margin: 0;
+  padding: 0;
+}
 
+.header {
+  background-image: url("https://images.newscientist.com/wp-content/uploads/2019/07/02111520/gettyimages-157639696.jpg?crop=1:1,smart&width=1200&height=1200&upscale=true");
+}
+
+canvas {
+  background: black;
+  z-index: -1;
 }
 
 .contact-method-icon {
@@ -18,8 +30,108 @@ body {
   width: 50px;
 }
 
-canvas {
-  width: 250px;
-  height: 250px;
-  background: grey;
+.proj-showcase {
+  background: rgb(109, 88, 166);
+  width: 33.33%;
+  height: 300px;
+  float: left;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid black;
+}
+
+.tab {
+  cursor: pointer;
+  font-size: 30px;
+  padding: 15px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.155);
+}
+
+.tab:hover {
+  background-color: rgba(202, 201, 201, 0.551);
+}
+
+.tab.active {
+  background-color: rgba(131, 131, 131, 0.653);
+}
+
+.tab-content {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+}
+
+#projects {
+  text-align: center;
+}
+
+#summary {
+  padding-left: 15%;
+  width: 70%;
+  font-size: 18px;
+}
+
+#contact {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px
+}
+
+.contact-img-container {
+  position: relative;
+}
+
+.disc-overlay {
+  position: absolute;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.326);
+  height: 60px;
+  width: 60px;
+  padding-left: 7px;
+  display: none;
+  cursor: pointer;
+}
+
+.disc-user {
+  position: absolute;
+  top: 25%;
+  left: 24%;
+  bottom: 60%;
+  font-size: 15px;
+}
+
+.disc-number {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+  bottom: 60%;
+  font-size: 15px;
+}
+
+#gmail-img {
+  cursor: pointer;
+}
+
+#phone-img {
+  cursor: pointer;
 }
