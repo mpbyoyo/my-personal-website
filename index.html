@@ -5,6 +5,7 @@
     <script src="script.js" defer></script>
     <script type="text/javascript" src="https://unpkg.com/paper@0.12.15/dist/paper-full.js"></script>
     <script type="text/paperscript" src="paperScript.js" canvas="maze-canvas"></script>
+    <script type="text/paperscript" src="paperSolarSystemScript.js" canvas="solar-canvas"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <title>Maxwell Bourgeois</title>
@@ -12,6 +13,9 @@
   <body>
     <script src="script.js"></script>
     
+    <canvas id="solar-canvas" width="100%" height="100%"></canvas>
+    <div class="sun-hitbox"></div>
+
     <div class="header">
       <ul class="tabs">
         <li class="active tab" data-tab-target="#about-me">About Me</li>
@@ -21,15 +25,15 @@
     
 
     <div id="site-header">
-      <h2>Hello, I'm</h2>
-      <h1>Maxwell Bourgeois</h1>
+      <h2 style="color: white">Hello I'm</h2>
+      <h1 style="color: white">Maxwell Bourgeois</h1>
     </div>
 
 
     <div class="tab-content">
       <div class="active" id="about-me" data-tab-content>
         <div id="summary">
-          <p> I'm an aspiring software engineer from New Orleans, Louisiana, where I was born and raised. 
+          <p style="color: white"> I'm an aspiring software engineer from New Orleans, Louisiana, where I was born and raised. 
           I've been out of Highshcool for a little less than a year now, and I've spent a lot of that 
           time building my HTML, CSS, and JavaScript skills. At first I took a local bootcamp similar to FlatIron 
           called Operation Spark, but found it to be less rigorous than I'd like. My initial goal was to
@@ -37,10 +41,12 @@
           something like that. But I quickly found that I really enjoyed coding, and decided to extend my gap year to
           pursue a software engineering bootcamp.</p>
           
-          <p> On a less professional note, I enjoy video games, science, vr, and walking around my city. I'm not
+          <p style="color: white"> On a less professional note, I enjoy video games, science, vr, and walking around my city. I'm not
           much of an extrovert, and spend a lot of time inside, but I do quite like talking to people. I really
           enjoy talking futurology with people. You can learn a lot about a person by how they talk and think about the
           future.</p>
+
+          <div class="solar-info" style="color: white">Press +/- to change the speed of the planets! (Warning: As of now, making the planets go backwards too far will evaporate them... Procede with caution.)</div>
         </div>
       </div>
 
@@ -72,8 +78,8 @@
 
 
     <div id="contact">
-      <h3>Contact Me</h3>
-      <div>I can be contacted by:</div>
+      <h3 style="color: white">Contact Me</h3>
+      <div style="color: white">I can be contacted by:</div>
         <span class="contact-img-container" id="discord">
           <img class="contact-method-icon" id="discord-img" src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png">
           <span class="disc-overlay" title="Click to copy!">

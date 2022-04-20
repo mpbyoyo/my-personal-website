@@ -2,6 +2,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  background: black;
 }
 
 /* #site-header {
@@ -9,6 +10,27 @@ body {
   font-family: "Arial Narrow", sans-serif;
   font-size: 70px;
 } */
+
+#solar-canvas {
+  background: black;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.sun-hitbox {
+  position: absolute;
+  top: 47.5%;
+  left: 49%;
+  height: 2vw;
+  width: 2vw;
+}
+
+#solar-canvas[resize] {
+  height: 100%;
+  width: 100%;
+}
 
 #site-header {
   text-align: center;
@@ -31,10 +53,11 @@ canvas {
 }
 
 .proj-showcase {
-  background: rgb(109, 88, 166);
+  background: rgba(109, 88, 166, 0.368);
   width: 33.33%;
   height: 300px;
   float: left;
+  color: white;
 }
 
 [data-tab-content] {

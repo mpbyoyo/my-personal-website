@@ -1,3 +1,6 @@
+var w = window.innerWidth;
+var h = window.innerHeight;
+
 document.querySelectorAll('[data-tab-target]').forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget)
@@ -32,6 +35,14 @@ $('#phone-img').on('click', () => {
   var copyText = '(504) 402-6253'
   navigator.clipboard.writeText(copyText);
   alert("Copied " + copyText + " to the clipboard!");
+})
+
+var sound = new Audio("the-sun-is-a-deadly-laser.mp3");
+
+$('.sun-hitbox').on('click', () => {
+  sound.currentTime = 0;
+  sound.volume = 0.05
+  sound.play();
 })
 
 // $('#maze-canvas').on('mouseover', )
