@@ -158,3 +158,24 @@ canvas {
 #phone-img {
   cursor: pointer;
 }
+
+#maze-canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.maze-gen-title {
+  cursor: pointer;
+}
+
+.maze-gen-info {
+  position: absolute;
+  z-index: 10;
+  background: rgb(255, 255, 255);
+  height: 15vw;
+  width: 15vw;
+  top: 14vw;
+  left: 30vw;
+  display: none;
+  color: black;
+}

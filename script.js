@@ -45,6 +45,14 @@ $('.sun-hitbox').on('click', () => {
   sound.play();
 })
 
+$('.maze-gen-title').on('click', () => {
+    $('.maze-gen-info').fadeIn('5');
+})
+
+$('.close-maze-info').on('click', () => {
+  $('.maze-gen-info').fadeOut('5');
+})
+
 // $('#maze-canvas').on('mouseover', )
 
 // var mazeButton = document.getElementsByClassName(".maze-gen-button");
